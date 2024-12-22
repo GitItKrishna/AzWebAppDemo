@@ -110,7 +110,8 @@
     ![img.png](SampleAzWebApp/Images/img_18.png)
 23. Now, you can see the above site is getting served from Azure Web App and the data is coming from Azure SQL Database.
 24. You can remove the connection strings from the appsettings.json file and add them to the Azure App Configuration.
-    ![img.png](SampleAzWebApp/Images/img_16.png)
+    
 25. You can go to app , environment variables and add the connection strings, select the Type as SQL Azure.
     ![img.png](SampleAzWebApp/Images/img_22.png)
-26. 
+26. You can still see the data from the Azure SQL database.
+    ![img.png](SampleAzWebApp/Images/img_16.png)
