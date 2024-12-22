@@ -1,8 +1,36 @@
-﻿@{
+﻿@model SampleAzWebApp.Models.UsersViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h3 class="display-6">Welcome to AZ-204</h3>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3 class="display-6">My Office UserList</h3>
+    @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+<div class="container-sm">
+    <h4>User List</h4>
+    
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr>
+            <th class="th-sm" scope="col">User Id</th>
+            <th class="th-sm" scope="col">User Name</th>
+            <th class="th-sm" scope="col">Designation</th>
+            <th class="th-sm" scope="col">Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var user in @Model.Users)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.UserName</td>
+                <td>@user.Designation</td>
+                <td>@user.Location</td>
+            </tr>
+        }
+        
+        </tbody>
+        
+    </table>
 </div>
