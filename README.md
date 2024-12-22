@@ -57,6 +57,14 @@
 8. After deployment is successful, navigate to the resource and click on Query editor.
 
     ![img.png](SampleAzWebApp/Images/img_13.png) 
+9. You can also connect to the database by using Azure Data Studio or SQL Server Management Studio.
+    
+10. Copy the ServerName from the database (as shown below) and switch to azure data studio.
+    ![img.png](SampleAzWebApp/Images/img_20.png)
+11. Open Azure Data Studio and click on New Connection.
+    ![img.png](SampleAzWebApp/Images/img_21.png)
+
+
 9. Connect to the database using the Server admin login and password.
 10. Create a new database and a table. You can run the below script to create a table and insert some data.
     ```
@@ -81,6 +89,8 @@
     "AZURE_SQL_CONNECTIONSTRING": "Server=tcp:myappdbdemo.database.windows.net,1433;Initial Catalog=myappdb;Persist Security Info=False;User ID=appadmin;Password=Password#123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
     }
     ```
+14. You can see the connection strings from azure sql database as below.
+    ![img.png](SampleAzWebApp/Images/img_19.png)
 14. Use the above connection string in the code as below.
     ![img.png](SampleAzWebApp/Images/img_17.png)
     

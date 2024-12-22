@@ -23,7 +23,7 @@ public class HomeController : Controller
         sqlConnection.Open();
 
         var sqlcommand = new SqlCommand(
-            "SELECT UserId, UserName, Designation, Location FROM Users;",sqlConnection);
+            "SELECT UserId, UserName, Designation, Location FROM Users2;",sqlConnection);
         using (SqlDataReader sqlDatareader = sqlcommand.ExecuteReader())
         {
             while (sqlDatareader.Read())
